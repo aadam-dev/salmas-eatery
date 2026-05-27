@@ -22,7 +22,7 @@ export default function ContactPageClient() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-ivory mb-5 font-heading">Get in touch</h1>
           <p className="text-ivory/60 text-lg leading-relaxed max-w-2xl">
-            We deliver across Accra. Add dishes to your cart on the menu, then send your order on WhatsApp with
+            We deliver across Accra. Add dishes to your order on the menu, then send everything on WhatsApp with
             your delivery details.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function ContactPageClient() {
           <div className="p-8 rounded-2xl bg-warm-card border border-terracotta/20 mb-10 text-center">
             <h2 className="text-2xl font-bold text-ivory font-heading mb-3">Order for delivery</h2>
             <p className="text-ivory/55 text-sm mb-6 max-w-md mx-auto">
-              Browse the menu, add items to your cart, and send everything on WhatsApp in one tap.
+              Browse the menu, add items to your order, and send everything on WhatsApp in one tap.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link

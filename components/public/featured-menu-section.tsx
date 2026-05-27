@@ -20,7 +20,7 @@ export default function FeaturedMenuSection() {
             Plates people <span className="text-terracotta italic">come back for</span>
           </h2>
           <p className="text-ivory/50 leading-relaxed">
-            Six favourites from our rice, jollof, and banku menus. Add to cart and send your order on
+            Six favourites from our rice, jollof, and banku menus. Add to your order and send on
             WhatsApp for delivery.
           </p>
         </div>

@@ -120,7 +120,7 @@ export default function MenuPageClient() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-ivory font-heading mb-4">Ready to order?</h2>
           <p className="text-ivory/50 mb-8 max-w-md mx-auto">
-            Add your dishes to the cart and send your delivery order on WhatsApp.
+            Add dishes to your order and send your delivery request on WhatsApp.
           </p>
           <Link
             href="/menu"

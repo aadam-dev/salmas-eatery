@@ -73,7 +73,7 @@ export default function HeroSection() {
               style={{ animation: "heroFadeUp 0.8s ease-out 0.4s both" }}
             >
               Ghanaian rice, jollof, and banku, cooked with heart and delivered to your door. Add to
-              cart, send on WhatsApp, and we handle the rest.
+              your order, send on WhatsApp, and we handle the rest.
             </p>
 
             <div
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 onClick={openCart}
                 className="px-8 py-4 border border-ivory/30 text-ivory font-medium rounded-full text-base hover:bg-ivory/10 hover:border-ivory/50 transition-all backdrop-blur-sm"
               >
-                View cart
+                View order
               </button>
             </div>
 

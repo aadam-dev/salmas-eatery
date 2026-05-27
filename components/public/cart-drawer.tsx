@@ -25,7 +25,7 @@ export default function CartDrawer() {
     e.preventDefault();
     setError(null);
     if (!lines.length) {
-      setError("Your cart is empty. Add dishes from the menu first.");
+      setError("Your order is empty. Add dishes from the menu first.");
       return;
     }
     const ok = openDeliveryOrderWhatsApp({
@@ -54,7 +54,7 @@ export default function CartDrawer() {
       <button
         type="button"
         className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm"
-        aria-label="Close cart"
+        aria-label="Close order"
         onClick={closeCart}
       />
       <aside

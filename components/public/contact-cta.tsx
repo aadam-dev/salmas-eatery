@@ -34,7 +34,7 @@ export default function ContactCTA() {
             Hungry? <span className="text-terracotta italic">Order now</span>
           </h2>
           <p className="text-ivory/60 mb-10 leading-relaxed">
-            Build your order from the menu, open your cart, and send everything on WhatsApp with your
+            Build your order from the menu, review it, and send everything on WhatsApp with your
             delivery address.
           </p>
 

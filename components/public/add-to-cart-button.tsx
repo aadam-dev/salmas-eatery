@@ -26,10 +26,10 @@ export default function AddToCartButton({ item, className, variant = "default" }
           "w-10 h-10 rounded-full bg-terracotta text-warm-black hover:bg-terracotta/90",
         className
       )}
-      aria-label={`Add ${item.name} to cart`}
+      aria-label={`Add ${item.name} to order`}
     >
       <Plus className={variant === "compact" ? "h-4 w-4" : "h-4 w-4"} />
-      {variant === "default" && <span>Add to cart</span>}
+      {variant === "default" && <span>Add to order</span>}
     </button>
   );
 }

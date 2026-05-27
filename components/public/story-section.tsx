@@ -39,7 +39,7 @@ export default function StorySection() {
             </p>
             <p className="text-ivory/60 leading-relaxed mb-8">
               We built our menu around three traditions you can order for delivery any day of the week. Add
-              to cart, send on WhatsApp, and let us bring the kitchen to you.
+              to your order, send on WhatsApp, and let us bring the kitchen to you.
             </p>
 
             <Link
