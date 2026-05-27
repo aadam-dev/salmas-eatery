@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Worth It Eatery
 
-## Getting Started
+Delivery-focused marketing site for **Worth It Eatery** — Ghanaian rice, jollof, and banku in Accra. Built with Next.js 15, React 19, and Tailwind CSS v4.
 
-First, run the development server:
+**Live:** [worthiteatery.vercel.app](https://worthiteatery.vercel.app)  
+**Repo:** [github.com/aadam-dev/salmas-eatery](https://github.com/aadam-dev/salmas-eatery)
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+Set `NEXT_PUBLIC_SITE_URL=https://worthiteatery.vercel.app` in Vercel (and locally in `.env`).
 
-To learn more about Next.js, take a look at the following resources:
+## Ordering flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Customer browses `/menu` and taps **Add to cart**
+2. Cart drawer collects items + delivery details (name, phone, address)
+3. **Send order on WhatsApp** opens WhatsApp with a formatted order message
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Configure the WhatsApp number in [`lib/site.ts`](lib/site.ts) → `orderWhatsAppNumber`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Before launch — checklist
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Update [`lib/site.ts`](lib/site.ts):
+
+- [ ] **orderWhatsAppNumber** — real WhatsApp line (digits only, e.g. `233XXXXXXXXX`)
+- [ ] **Phone** — display number and `tel:` href
+- [ ] **Email** — `hello@worthiteatery.com` or business email
+- [ ] **Address** — kitchen / delivery base address
+- [ ] **Google Maps URL**
+- [ ] **Social links**
+- [ ] **Opening hours**
+
+Update [`lib/menu-data.ts`](lib/menu-data.ts) with final prices.
+
+Replace photos in `public/images/dishes/` when available.
+
+## Deploy (Vercel)
+
+```bash
+npx vercel link --project worthiteatery
+npx vercel env add NEXT_PUBLIC_SITE_URL production
+# value: https://worthiteatery.vercel.app
+npx vercel --prod
+```
