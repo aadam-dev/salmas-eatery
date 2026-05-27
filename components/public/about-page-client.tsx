@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { siteImages } from "@/lib/site-images";
 import { SITE } from "@/lib/site";
+import Reveal from "@/components/public/reveal";
 
 const values = [
   {
@@ -13,7 +13,7 @@ const values = [
   },
   {
     title: "Honest ingredients",
-    body: "Fresh fish, ripe tomatoes, and fermented dough prepared daily — nothing frozen, nothing shortcuts.",
+    body: "Fresh fish, ripe tomatoes, and fermented dough prepared daily. Nothing frozen, no shortcuts.",
   },
   {
     title: "Delivery done right",
@@ -50,11 +50,11 @@ export default function AboutPageClient() {
       <section className="py-20 bg-warm-black">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+            <Reveal>
               <h2 className="text-3xl font-bold text-ivory font-heading mb-6">Why &ldquo;Worth It&rdquo;</h2>
               <p className="text-ivory/60 leading-relaxed mb-5">
                 Worth It Eatery is built on a simple idea: when you order Ghanaian food for delivery, it
-                should taste as good as eating at someone&apos;s table — and feel fairly priced for what you
+                should taste as good as eating at someone&apos;s table, and feel fairly priced for what you
                 get.
               </p>
               <p className="text-ivory/60 leading-relaxed mb-5">
@@ -64,20 +64,15 @@ export default function AboutPageClient() {
               <p className="text-ivory/40 text-sm italic">
                 Founder details and photos can be added here when provided.
               </p>
-            </div>
+            </Reveal>
 
             <div className="grid grid-cols-2 gap-3">
               {siteImages.aboutGrid.map((img, i) => (
-                <motion.div
-                  key={img.alt}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className={`relative rounded-xl overflow-hidden ${i === 0 ? "col-span-2 aspect-[16/9]" : "aspect-square"}`}
-                >
-                  <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
-                </motion.div>
+                <Reveal key={img.alt} delay={i * 0.08} className={i === 0 ? "col-span-2" : ""}>
+                  <div className={`relative rounded-xl overflow-hidden ${i === 0 ? "aspect-[16/9]" : "aspect-square"}`}>
+                    <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -91,17 +86,12 @@ export default function AboutPageClient() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((v, i) => (
-              <motion.div
-                key={v.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="p-8 rounded-2xl bg-warm-card border border-white/5 text-center"
-              >
-                <h3 className="text-xl font-bold text-ivory font-heading mb-3">{v.title}</h3>
-                <p className="text-ivory/55 text-sm leading-relaxed">{v.body}</p>
-              </motion.div>
+              <Reveal key={v.title} delay={i * 0.08}>
+                <div className="p-8 rounded-2xl bg-warm-card border border-white/5 text-center h-full">
+                  <h3 className="text-xl font-bold text-ivory font-heading mb-3">{v.title}</h3>
+                  <p className="text-ivory/55 text-sm leading-relaxed">{v.body}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>

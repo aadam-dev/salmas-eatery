@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { siteImages } from "@/lib/site-images";
+import Reveal from "@/components/public/reveal";
 
 export default function GallerySection() {
   return (
@@ -16,24 +16,17 @@ export default function GallerySection() {
           From our <span className="text-terracotta italic">kitchen</span>
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[200px] gap-3 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {siteImages.gallery.map((img, i) => (
-            <motion.div
-              key={img.id}
-              initial={{ opacity: 0, scale: 0.96 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.06 }}
-              className={`relative rounded-xl overflow-hidden ${img.className}`}
-            >
+            <Reveal key={img.id} delay={i * 0.05} className="relative aspect-[4/3] rounded-xl overflow-hidden">
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 768px) 50vw, 33vw"
               />
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

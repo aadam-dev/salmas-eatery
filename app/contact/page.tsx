@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Contact & Delivery",
   description:
-    "Contact Worth It Eatery in Accra — delivery hours, phone, and WhatsApp ordering.",
+    "Contact Worth It Eatery in Accra: delivery hours, phone, and WhatsApp ordering.",
   path: "/contact",
 });
 

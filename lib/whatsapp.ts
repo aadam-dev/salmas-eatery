@@ -34,7 +34,7 @@ export function formatDeliveryOrderMessage(payload: DeliveryOrderPayload): strin
   const subtotal = cartSubtotal(payload.lines);
   const itemLines = payload.lines.map(
     (line) =>
-      `• ${line.quantity}× ${line.name} — ${formatMoney(line.unitPrice * line.quantity)}`
+      `• ${line.quantity}× ${line.name}: ${formatMoney(line.unitPrice * line.quantity)}`
   );
 
   const lines = [
@@ -52,7 +52,7 @@ export function formatDeliveryOrderMessage(payload: DeliveryOrderPayload): strin
     `*Delivery address:* ${payload.address.trim()}`,
     optionalLine("Notes", payload.notes),
     "",
-    `— Sent from ${SITE.name} website`,
+    `Sent from ${SITE.name} website`,
   ];
 
   return lines.filter((line): line is string => line !== null).join("\n");

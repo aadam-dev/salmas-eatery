@@ -1,13 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Flame, Heart, Truck } from "lucide-react";
+import Reveal from "@/components/public/reveal";
 
 const pillars = [
   {
     icon: Flame,
     title: "Flame-kissed jollof",
-    description: "Every pot is stirred by hand and finished over fire — smoky, layered, and worth the wait.",
+    description: "Every pot is stirred by hand and finished over fire. Smoky, layered, and worth the wait.",
     color: "text-terracotta",
     bg: "bg-terracotta/10",
   },
@@ -21,7 +21,7 @@ const pillars = [
   {
     icon: Heart,
     title: "Home-style portions",
-    description: "Generous servings cooked the way a Ghanaian kitchen should — full flavour, every time.",
+    description: "Generous servings cooked the way a Ghanaian kitchen should. Full flavour, every time.",
     color: "text-ivory",
     bg: "bg-white/5",
   },
@@ -41,20 +41,15 @@ export default function WhyWorthItSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, i) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="p-8 rounded-2xl border border-white/5 bg-warm-card"
-            >
-              <div className={`w-14 h-14 rounded-2xl ${pillar.bg} flex items-center justify-center mb-6`}>
-                <pillar.icon className={`h-7 w-7 ${pillar.color}`} />
+            <Reveal key={pillar.title} delay={i * 0.08}>
+              <div className="p-8 rounded-2xl border border-white/5 bg-warm-card h-full">
+                <div className={`w-14 h-14 rounded-2xl ${pillar.bg} flex items-center justify-center mb-6`}>
+                  <pillar.icon className={`h-7 w-7 ${pillar.color}`} />
+                </div>
+                <h3 className="text-xl font-bold text-ivory font-heading mb-3">{pillar.title}</h3>
+                <p className="text-ivory/55 text-sm leading-relaxed">{pillar.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-ivory font-heading mb-3">{pillar.title}</h3>
-              <p className="text-ivory/55 text-sm leading-relaxed">{pillar.description}</p>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

@@ -72,7 +72,7 @@ export default function HeroSection() {
               className="text-ivory/70 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
               style={{ animation: "heroFadeUp 0.8s ease-out 0.4s both" }}
             >
-              Ghanaian rice, jollof, and banku — cooked with heart and delivered to your door. Add to
+              Ghanaian rice, jollof, and banku, cooked with heart and delivered to your door. Add to
               cart, send on WhatsApp, and we handle the rest.
             </p>
 

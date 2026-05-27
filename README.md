@@ -1,6 +1,6 @@
 # Worth It Eatery
 
-Delivery-focused marketing site for **Worth It Eatery** — Ghanaian rice, jollof, and banku in Accra. Built with Next.js 15, React 19, and Tailwind CSS v4.
+Delivery-focused marketing site for **Worth It Eatery**: Ghanaian rice, jollof, and banku in Accra. Built with Next.js 15, React 19, and Tailwind CSS v4.
 
 **Live:** [worthiteatery.vercel.app](https://worthiteatery.vercel.app)  
 **Repo:** [github.com/aadam-dev/salmas-eatery](https://github.com/aadam-dev/salmas-eatery)
@@ -33,14 +33,14 @@ Configure the WhatsApp number in [`lib/site.ts`](lib/site.ts) → `orderWhatsApp
 
 ---
 
-## Before launch — checklist
+## Before launch checklist
 
 Update [`lib/site.ts`](lib/site.ts):
 
-- [ ] **orderWhatsAppNumber** — real WhatsApp line (digits only, e.g. `233XXXXXXXXX`)
-- [ ] **Phone** — display number and `tel:` href
-- [ ] **Email** — `hello@worthiteatery.com` or business email
-- [ ] **Address** — kitchen / delivery base address
+- [ ] **orderWhatsAppNumber**: real WhatsApp line (digits only, e.g. `233XXXXXXXXX`)
+- [ ] **Phone**: display number and `tel:` href
+- [ ] **Email**: `hello@worthiteatery.com` or business email
+- [ ] **Address**: kitchen / delivery base address
 - [ ] **Google Maps URL**
 - [ ] **Social links**
 - [ ] **Opening hours**

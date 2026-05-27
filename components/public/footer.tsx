@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-ivory/50 text-sm leading-relaxed max-w-sm">
-              Home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku — delivered across
+              Home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku, delivered across
               Accra. Order on the menu and send via WhatsApp.
             </p>
           </div>

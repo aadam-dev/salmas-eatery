@@ -18,7 +18,7 @@ export const SEO = {
   defaultTitle: "Worth It Eatery | Rice, Jollof & Banku Delivery in Accra",
   titleTemplate: "%s | Worth It Eatery",
   defaultDescription:
-    "Worth It Eatery — home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku delivered in Accra. Order online and send your cart on WhatsApp.",
+    "Worth It Eatery: home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku delivered in Accra. Order online and send your cart on WhatsApp.",
   keywords: [
     "Worth It Eatery",
     "food delivery Accra",
@@ -67,7 +67,7 @@ export function pageMetadata({
       siteName: SEO.siteName,
       title: fullTitle,
       description,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: "Worth It Eatery — Ghanaian rice, jollof and banku" }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: "Worth It Eatery, Ghanaian rice, jollof and banku" }],
     },
     twitter: {
       card: "summary_large_image",

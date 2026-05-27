@@ -1,4 +1,4 @@
-// TODO: Replace before launch — placeholder business details
+// TODO: Replace before launch (placeholder business details)
 export type SitePhone = {
   display: string;
   href: string;
@@ -6,17 +6,17 @@ export type SitePhone = {
 
 export const SITE = {
   name: "Worth It Eatery",
-  tagline: "Rice, jollof & banku — delivered with care",
+  tagline: "Rice, jollof & banku, delivered with care",
   email: "hello@worthiteatery.com",
   phones: [{ display: "+233 XX XXX XXXX", href: "tel:+233000000000" }] as SitePhone[],
   address: "[Street address], Accra, Ghana",
   mapsUrl: "#",
   hours: [
-    { day: "Monday – Friday", hours: "8:00 AM – 9:00 PM" },
-    { day: "Saturday", hours: "9:00 AM – 10:00 PM" },
-    { day: "Sunday", hours: "10:00 AM – 8:00 PM" },
+    { day: "Monday to Friday", hours: "8:00 AM to 9:00 PM" },
+    { day: "Saturday", hours: "9:00 AM to 10:00 PM" },
+    { day: "Sunday", hours: "10:00 AM to 8:00 PM" },
   ],
-  hoursSummary: "Mon–Fri 8AM–9PM · Sat 9AM–10PM · Sun 10AM–8PM",
+  hoursSummary: "Mon-Fri 8AM-9PM · Sat 9AM-10PM · Sun 10AM-8PM",
   currency: "GHS",
   social: {
     instagram: "#",

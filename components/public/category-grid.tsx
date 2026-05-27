@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { categoryShowcase } from "@/lib/menu-data";
+import Reveal from "@/components/public/reveal";
 
 export default function CategoryGrid() {
   return (
@@ -19,13 +19,7 @@ export default function CategoryGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {categoryShowcase.map((cat, i) => (
-            <motion.div
-              key={cat.id}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-            >
+            <Reveal key={cat.id} delay={i * 0.08}>
               <Link
                 href={cat.href}
                 className="group block relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/5 hover:border-terracotta/30 transition-colors"
@@ -47,7 +41,7 @@ export default function CategoryGrid() {
                   </span>
                 </div>
               </Link>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

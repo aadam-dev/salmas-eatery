@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "About",
   description:
-    "The story behind Worth It Eatery — Ghanaian rice, jollof, and banku delivered across Accra.",
+    "The story behind Worth It Eatery: Ghanaian rice, jollof, and banku delivered across Accra.",
   path: "/about",
 });
 

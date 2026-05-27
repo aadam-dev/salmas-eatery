@@ -195,7 +195,7 @@ export default function CartDrawer() {
                 Send order on WhatsApp
               </button>
               <p className="text-ivory/40 text-[11px] text-center leading-relaxed">
-                You will complete the order in WhatsApp. Delivery fees may apply — {SITE.name} will confirm.
+                You will complete the order in WhatsApp. Delivery fees may apply. {SITE.name} will confirm.
               </p>
             </form>
           )}

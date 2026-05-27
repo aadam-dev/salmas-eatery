@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, menuJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Menu",
   description:
-    "Rice dishes, jollofs, and banku at Worth It Eatery — order for delivery in Accra. Add to cart and send on WhatsApp.",
+    "Rice dishes, jollofs, and banku at Worth It Eatery. Order for delivery in Accra and send on WhatsApp.",
   path: "/menu",
   keywords: ["Worth It Eatery menu", "jollof delivery Accra", "banku delivery", "fried rice Ghana"],
 });

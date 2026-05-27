@@ -15,7 +15,7 @@ import { pageMetadata, restaurantJsonLd, websiteJsonLd } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Worth It Eatery | Rice, Jollof & Banku Delivery in Accra",
   description:
-    "Worth It Eatery — home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku delivered in Accra. Order from the menu and send your cart on WhatsApp.",
+    "Worth It Eatery: home-style Ghanaian rice, flame-cooked jollof, and stone-ground banku delivered in Accra. Order from the menu and send your cart on WhatsApp.",
   path: "/",
 });
 

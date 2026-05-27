@@ -34,7 +34,7 @@ export default function MenuPageClient() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-ivory mb-5 font-heading leading-tight">Menu</h1>
           <p className="text-ivory/60 text-base md:text-lg leading-relaxed max-w-2xl">
-            Rice dishes, flame-cooked jollofs, and stone-ground banku — all prices in {SITE.currency}. Ask our
+            Rice dishes, flame-cooked jollofs, and stone-ground banku. All prices in {SITE.currency}. Ask our
             team about portions and spice level.
           </p>
         </div>

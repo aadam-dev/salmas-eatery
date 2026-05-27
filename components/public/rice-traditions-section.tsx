@@ -1,18 +1,18 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Flame, Wheat, Soup } from "lucide-react";
+import Reveal from "@/components/public/reveal";
 
 const traditions = [
   {
     icon: Flame,
     title: "Layered jollof",
-    body: "Tomato, onion, and spice are built in stages — not dumped in at once. We cook over open flame so the rice picks up a gentle smokiness that defines real Ghanaian jollof.",
+    body: "Tomato, onion, and spice are built in stages, not dumped in at once. We cook over open flame so the rice picks up a gentle smokiness that defines real Ghanaian jollof.",
   },
   {
     icon: Wheat,
     title: "Stone-ground banku",
-    body: "Corn and cassava dough fermented just long enough, then stirred until silky. Banku is patience — we serve it with tilapia, crab, or okro stew the way coastal kitchens always have.",
+    body: "Corn and cassava dough fermented just long enough, then stirred until silky. Banku takes patience. We serve it with tilapia, crab, or okro stew the way coastal kitchens always have.",
   },
   {
     icon: Soup,
@@ -38,20 +38,15 @@ export default function RiceTraditionsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {traditions.map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="relative p-8 rounded-2xl bg-warm-card border border-white/5"
-            >
-              <div className="w-12 h-12 rounded-full bg-terracotta/15 flex items-center justify-center mb-6">
-                <item.icon className="h-6 w-6 text-terracotta" />
+            <Reveal key={item.title} delay={i * 0.1}>
+              <div className="relative p-8 rounded-2xl bg-warm-card border border-white/5 h-full">
+                <div className="w-12 h-12 rounded-full bg-terracotta/15 flex items-center justify-center mb-6">
+                  <item.icon className="h-6 w-6 text-terracotta" />
+                </div>
+                <h3 className="text-xl font-bold text-ivory font-heading mb-3">{item.title}</h3>
+                <p className="text-ivory/55 text-sm leading-relaxed">{item.body}</p>
               </div>
-              <h3 className="text-xl font-bold text-ivory font-heading mb-3">{item.title}</h3>
-              <p className="text-ivory/55 text-sm leading-relaxed">{item.body}</p>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

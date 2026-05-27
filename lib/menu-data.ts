@@ -23,7 +23,7 @@ export const menuItems: MenuItem[] = [
     id: "steamed-white-rice",
     name: "Steamed White Rice",
     description:
-      "Fluffy long-grain rice steamed to perfection — the quiet canvas for rich stews, pepper, and grilled protein.",
+      "Fluffy long-grain rice steamed to perfection, the quiet canvas for rich stews, pepper, and grilled protein.",
     priceDisplay: "GHS 25",
     category: "rice",
     image: "/images/dishes/steamed-white-rice.jpg",
@@ -42,7 +42,7 @@ export const menuItems: MenuItem[] = [
     id: "chicken-fried-rice",
     name: "Chicken Fried Rice",
     description:
-      "Golden fried rice with tender chicken pieces, vegetables, and a touch of house spice — a crowd favourite.",
+      "Golden fried rice with tender chicken pieces, vegetables, and a touch of house spice, a crowd favourite.",
     priceDisplay: "GHS 50",
     category: "rice",
     image: "/images/dishes/chicken-fried-rice.jpg",
@@ -62,7 +62,7 @@ export const menuItems: MenuItem[] = [
     id: "omo-tuo",
     name: "Rice Balls (Omo Tuo)",
     description:
-      "Soft, hand-rolled rice balls — traditionally paired with groundnut soup or rich palm-nut stew.",
+      "Soft, hand-rolled rice balls, traditionally paired with groundnut soup or rich palm-nut stew.",
     priceDisplay: "GHS 35",
     category: "rice",
     image: "/images/dishes/omo-tuo.jpg",
@@ -71,7 +71,7 @@ export const menuItems: MenuItem[] = [
     id: "classic-jollof",
     name: "Classic Jollof",
     description:
-      "Tomato-layered jollof rice cooked low and slow over open flame — smoky, fragrant, and deeply Ghanaian.",
+      "Tomato-layered jollof rice cooked low and slow over open flame, smoky, fragrant, and deeply Ghanaian.",
     priceDisplay: "GHS 45",
     category: "jollofs",
     image: "/images/dishes/classic-jollof.jpg",
@@ -92,7 +92,7 @@ export const menuItems: MenuItem[] = [
     id: "jollof-fried-chicken",
     name: "Jollof & Fried Chicken",
     description:
-      "Party-ready jollof with crispy fried chicken — crunch outside, juicy within, every single time.",
+      "Party-ready jollof with crispy fried chicken, crunch outside, juicy within, every single time.",
     priceDisplay: "GHS 75",
     category: "jollofs",
     image: "/images/dishes/jollof-fried-chicken.jpg",
@@ -103,7 +103,7 @@ export const menuItems: MenuItem[] = [
     id: "jollof-fish",
     name: "Jollof & Fish",
     description:
-      "Smoky jollof served alongside seasoned grilled fish and fresh pepper — coastal comfort on a plate.",
+      "Smoky jollof served alongside seasoned grilled fish and fresh pepper, coastal comfort on a plate.",
     priceDisplay: "GHS 85",
     category: "jollofs",
     image: "/images/dishes/jollof-fish.jpg",
@@ -112,7 +112,7 @@ export const menuItems: MenuItem[] = [
     id: "party-jollof",
     name: "Party Jollof (Assorted)",
     description:
-      "A generous portion of jollof loaded with assorted meats — built for sharing and celebration.",
+      "A generous portion of jollof loaded with assorted meats, built for sharing and celebration.",
     priceDisplay: "GHS 90",
     category: "jollofs",
     image: "/images/dishes/party-jollof.jpg",
@@ -122,7 +122,7 @@ export const menuItems: MenuItem[] = [
     id: "jollof-beef",
     name: "Jollof & Beef",
     description:
-      "Rich jollof rice with tender beef suya strips and caramelised onions — bold, savoury, satisfying.",
+      "Rich jollof rice with tender beef suya strips and caramelised onions, bold, savoury, satisfying.",
     priceDisplay: "GHS 80",
     category: "jollofs",
     image: "/images/dishes/jollof-beef.jpg",
@@ -131,7 +131,7 @@ export const menuItems: MenuItem[] = [
     id: "banku-tilapia",
     name: "Banku & Grilled Tilapia",
     description:
-      "Fermented corn-and-cassava banku with whole grilled tilapia, shito, and fresh pepper — the classic pairing.",
+      "Fermented corn-and-cassava banku with whole grilled tilapia, shito, and fresh pepper, the classic pairing.",
     priceDisplay: "GHS 95",
     category: "banku",
     image: "/images/dishes/banku-tilapia.jpg",
@@ -142,7 +142,7 @@ export const menuItems: MenuItem[] = [
     id: "banku-fried-fish",
     name: "Banku & Fried Fish",
     description:
-      "Silky banku with golden fried fish, diced pepper, and onions — comfort food at its finest.",
+      "Silky banku with golden fried fish, diced pepper, and onions, comfort food at its finest.",
     priceDisplay: "GHS 85",
     category: "banku",
     image: "/images/dishes/banku-fried-fish.jpg",
@@ -152,7 +152,7 @@ export const menuItems: MenuItem[] = [
     id: "banku-okro",
     name: "Banku & Okro Stew",
     description:
-      "Smooth banku dipped into velvety okro stew with crab or fish — a Ga favourite, rich and soulful.",
+      "Smooth banku dipped into velvety okro stew with crab or fish, a Ga favourite, rich and soulful.",
     priceDisplay: "GHS 70",
     category: "banku",
     image: "/images/dishes/banku-okro.jpg",
@@ -161,7 +161,7 @@ export const menuItems: MenuItem[] = [
     id: "banku-crab",
     name: "Banku & Crab",
     description:
-      "Fresh banku with seasoned crab in aromatic pepper sauce — sweet, spicy, and unforgettable.",
+      "Fresh banku with seasoned crab in aromatic pepper sauce, sweet, spicy, and unforgettable.",
     priceDisplay: "GHS 120",
     category: "banku",
     image: "/images/dishes/banku-crab.jpg",
@@ -170,7 +170,7 @@ export const menuItems: MenuItem[] = [
     id: "banku-pepper-sauce",
     name: "Banku & Pepper Sauce",
     description:
-      "Hand-rolled banku with tilapia in our house pepper sauce — fiery, tangy, and deeply satisfying.",
+      "Hand-rolled banku with tilapia in our house pepper sauce, fiery, tangy, and deeply satisfying.",
     priceDisplay: "GHS 90",
     category: "banku",
     image: "/images/dishes/banku-pepper-sauce.jpg",

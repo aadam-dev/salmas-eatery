@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { MapPin, Clock } from "lucide-react";
 import { siteImages } from "@/lib/site-images";
 import { SITE } from "@/lib/site";
 import CartNavButton from "@/components/public/cart-nav-button";
+import Reveal from "@/components/public/reveal";
 
 export default function ContactCTA() {
   return (
@@ -23,12 +23,7 @@ export default function ContactCTA() {
       </div>
 
       <div className="relative container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center"
-        >
+        <Reveal className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-12 bg-terracotta" />
             <span className="text-terracotta text-xs font-medium tracking-widest uppercase">Delivery</span>
@@ -69,7 +64,7 @@ export default function ContactCTA() {
             </Link>
             <CartNavButton className="px-8 py-4" />
           </div>
-        </motion.div>
+        </Reveal>
       </div>
     </section>
   );
